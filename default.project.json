@@ -1,66 +1,49 @@
 {
   "name": "Roblox",
-  "tree": {
+ "tree": {
     "$className": "DataModel",
-
     "ReplicatedStorage": {
-        "$path": "src/shared"
+      "$className": "ReplicatedStorage",
+      "$path": "src/ReplicatedStorage",
+      "$ignoreUnknownInstances": true
     },
-
+    "ReplicatedFirst": {
+      "$className": "ReplicatedFirst",
+      "$path": "src/ReplicatedFirst",
+      "$ignoreUnknownInstances": true
+    },
     "ServerScriptService": {
-        "$path": "src/server"
+      "$className": "ServerScriptService",
+      "$path": "src/ServerScriptService",
+      "$ignoreUnknownInstances": true
     },
-
     "StarterPlayer": {
+      "$className": "StarterPlayer",
       "StarterPlayerScripts": {
-          "$path": "src/client"
-      }
+        "$className": "StarterPlayerScripts",
+        "$path": "src/StarterPlayer/StarterPlayerScripts"
+      },
+      "StarterCharacterScripts": {
+        "$className": "StarterCharacterScripts",
+        "$path": "src/StarterPlayer/StarterCharacterScripts"
+      },
+      "$ignoreUnknownInstances": true
     },
-
     "Workspace": {
       "$properties": {
         "FilteringEnabled": true
       },
-      "Baseplate": {
-        "$className": "Part",
-        "$properties": {
-          "Anchored": true,
-          "Color": [
-            0.38823,
-            0.37254,
-            0.38823
-          ],
-          "Locked": true,
-          "Position": [
-            0,
-            -10,
-            0
-          ],
-          "Size": [
-            512,
-            20,
-            512
-          ]
-        }
-      }
-    },
-    "Lighting": {
-      "$properties": {
-        "Ambient": [
-          0,
-          0,
-          0
-        ],
-        "Brightness": 2,
-        "GlobalShadows": true,
-        "Outlines": false,
-        "Technology": "Voxel"
-      }
+      "$ignoreUnknownInstances": true
     },
     "SoundService": {
       "$properties": {
         "RespectFilteringEnabled": true
       }
+    },
+    "TestService": {
+      "$className": "TestService",
+      "$path": "src/TestService",
+      "$ignoreUnknownInstances": true
     }
   }
 }

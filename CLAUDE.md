@@ -28,12 +28,6 @@ Built in Luau for Roblox Studio, synced via Rojo.
 - Format: describe what it does, list @param with type, list @return with type
 - Always use `ipairs()` when iterating Roblox Instance methods that return tables (GetChildren, GetDescendants, etc): `for _, child in ipairs(parent:GetChildren()) do`
 
-## Debug Mode
-- Set `Constants.DEBUG = true` during development, `false` for production
-- Use `Debug.Print(...)` for general debug output
-- Use `Debug.PrintTag(tag, ...)` for tagged output (e.g., `Debug.PrintTag("WAVE", "Wave 1 started")`)
-- When DEBUG is false, all prints are silenced — no runtime cost
-- Use tags like: WAVE, ENEMY, NEXUS, ECONOMY, TOWER for system-specific tracking
 
 ## Naming Conventions
 - Modules return a table: local MyModule = {} ... return MyModule
